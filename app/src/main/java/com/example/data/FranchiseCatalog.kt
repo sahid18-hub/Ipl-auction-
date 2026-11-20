@@ -1,0 +1,296 @@
+package com.example.data
+
+import androidx.compose.ui.graphics.Color
+import com.example.model.FranchiseId
+import com.example.model.FranchiseProfile
+import com.example.model.PlayerArchetype
+import com.example.model.PositionalBlueprint
+
+object FranchiseCatalog {
+
+    val allFranchises: List<FranchiseProfile> = listOf(
+        FranchiseProfile(
+            id = FranchiseId.CSK,
+            shortCode = "CSK",
+            fullName = "Chennai Super Kings",
+            city = "Chennai",
+            homeVenue = "M. A. Chidambaram Stadium (Chepauk)",
+            primaryColor = Color(0xFFF9CD05),
+            secondaryColor = Color(0xFF00529B),
+            onPrimaryColor = Color(0xFF0B132B),
+            dnaHeadline = "Chepauk Spin Core & Calm Veterans",
+            dnaTags = listOf("Spin All-Rounders", "Chepauk Spinners", "Proven Match-Winners"),
+            archetypeAffinities = mapOf(
+                PlayerArchetype.SPIN_ALL_ROUNDER to 1.28,
+                PlayerArchetype.FINGER_SPINNER to 1.24,
+                PlayerArchetype.MYSTERY_SPINNER to 1.22,
+                PlayerArchetype.TOP_ORDER_ANCHOR to 1.18,
+                PlayerArchetype.SWING_PACER to 1.15,
+                PlayerArchetype.FINISHER to 1.16,
+                PlayerArchetype.DEATH_PACER to 1.15
+            ),
+            youthBias = 0.96,
+            experienceBias = 1.14,
+            captaincyBonus = 1.08,
+            aggression = 0.94,
+            marqueeStretch = 1.12,
+            indianStarBias = 1.12,
+            blueprint = PositionalBlueprint(openers = 3, middleOrder = 4, wicketkeepers = 2, allRounders = 5, pacers = 4, spinners = 4)
+        ),
+        FranchiseProfile(
+            id = FranchiseId.MI,
+            shortCode = "MI",
+            fullName = "Mumbai Indians",
+            city = "Mumbai",
+            homeVenue = "Wankhede Stadium",
+            primaryColor = Color(0xFF005DA0),
+            secondaryColor = Color(0xFFD1AB3E),
+            onPrimaryColor = Color(0xFFFFFFFF),
+            dnaHeadline = "Wankhede Pace Spearheads & Power Finishers",
+            dnaTags = listOf("Elite Pace", "Explosive Indian Batters", "Power Finishers"),
+            archetypeAffinities = mapOf(
+                PlayerArchetype.DEATH_PACER to 1.30,
+                PlayerArchetype.EXPRESS_PACER to 1.24,
+                PlayerArchetype.LEFT_ARM_PACER to 1.22,
+                PlayerArchetype.FINISHER to 1.26,
+                PlayerArchetype.PACE_ALL_ROUNDER to 1.24,
+                PlayerArchetype.MIDDLE_ORDER_ENFORCER to 1.18,
+                PlayerArchetype.EXPLOSIVE_WK to 1.16
+            ),
+            youthBias = 1.04,
+            experienceBias = 1.08,
+            captaincyBonus = 1.12,
+            aggression = 1.14,
+            marqueeStretch = 1.24,
+            indianStarBias = 1.18,
+            blueprint = PositionalBlueprint(openers = 3, middleOrder = 4, wicketkeepers = 2, allRounders = 4, pacers = 6, spinners = 3)
+        ),
+        FranchiseProfile(
+            id = FranchiseId.RCB,
+            shortCode = "RCB",
+            fullName = "Royal Challengers Bengaluru",
+            city = "Bengaluru",
+            homeVenue = "M. Chinnaswamy Stadium",
+            primaryColor = Color(0xFFD91C24),
+            secondaryColor = Color(0xFFD4AF37),
+            onPrimaryColor = Color(0xFFFFFFFF),
+            dnaHeadline = "Marquee Firepower, Wrist Spin & Death Pace",
+            dnaTags = listOf("Marquee Batters", "Wrist Spinners", "Death Pacers"),
+            archetypeAffinities = mapOf(
+                PlayerArchetype.POWERPLAY_OPENER to 1.24,
+                PlayerArchetype.TOP_ORDER_ANCHOR to 1.20,
+                PlayerArchetype.WRIST_SPINNER to 1.26,
+                PlayerArchetype.DEATH_PACER to 1.26,
+                PlayerArchetype.EXPLOSIVE_WK to 1.20,
+                PlayerArchetype.FINISHER to 1.18,
+                PlayerArchetype.EXPRESS_PACER to 1.16
+            ),
+            youthBias = 1.02,
+            experienceBias = 1.06,
+            captaincyBonus = 1.15,
+            aggression = 1.15,
+            marqueeStretch = 1.26,
+            indianStarBias = 1.12,
+            blueprint = PositionalBlueprint(openers = 3, middleOrder = 4, wicketkeepers = 2, allRounders = 4, pacers = 5, spinners = 3)
+        ),
+        FranchiseProfile(
+            id = FranchiseId.KKR,
+            shortCode = "KKR",
+            fullName = "Kolkata Knight Riders",
+            city = "Kolkata",
+            homeVenue = "Eden Gardens",
+            primaryColor = Color(0xFF5A2D82),
+            secondaryColor = Color(0xFFF3C623),
+            onPrimaryColor = Color(0xFFFFFFFF),
+            dnaHeadline = "Mystery Spin, Dynamic All-Rounders & Power",
+            dnaTags = listOf("Mystery Spin", "High-SR Hitters", "Dynamic All-Rounders"),
+            archetypeAffinities = mapOf(
+                PlayerArchetype.MYSTERY_SPINNER to 1.32,
+                PlayerArchetype.WRIST_SPINNER to 1.22,
+                PlayerArchetype.PACE_ALL_ROUNDER to 1.26,
+                PlayerArchetype.SPIN_ALL_ROUNDER to 1.24,
+                PlayerArchetype.FINISHER to 1.22,
+                PlayerArchetype.POWERPLAY_OPENER to 1.18,
+                PlayerArchetype.EXPLOSIVE_WK to 1.18
+            ),
+            youthBias = 1.06,
+            experienceBias = 1.02,
+            captaincyBonus = 1.10,
+            aggression = 1.10,
+            marqueeStretch = 1.20,
+            indianStarBias = 1.10,
+            blueprint = PositionalBlueprint(openers = 3, middleOrder = 4, wicketkeepers = 2, allRounders = 5, pacers = 4, spinners = 4)
+        ),
+        FranchiseProfile(
+            id = FranchiseId.SRH,
+            shortCode = "SRH",
+            fullName = "Sunrisers Hyderabad",
+            city = "Hyderabad",
+            homeVenue = "Rajiv Gandhi Intl. Stadium",
+            primaryColor = Color(0xFFFF6B1A),
+            secondaryColor = Color(0xFF1A1A1D),
+            onPrimaryColor = Color(0xFF0A0E17),
+            dnaHeadline = "Ultra-Aggressive Top Order & Pace Depth",
+            dnaTags = listOf("Powerplay Blitz", "Pace Depth", "Explosive OS All-Rounders"),
+            archetypeAffinities = mapOf(
+                PlayerArchetype.POWERPLAY_OPENER to 1.30,
+                PlayerArchetype.EXPLOSIVE_WK to 1.26,
+                PlayerArchetype.PACE_ALL_ROUNDER to 1.24,
+                PlayerArchetype.MIDDLE_ORDER_ENFORCER to 1.22,
+                PlayerArchetype.EXPRESS_PACER to 1.20,
+                PlayerArchetype.SWING_PACER to 1.18,
+                PlayerArchetype.LEFT_ARM_PACER to 1.18
+            ),
+            youthBias = 1.05,
+            experienceBias = 1.03,
+            captaincyBonus = 1.12,
+            aggression = 1.14,
+            marqueeStretch = 1.22,
+            indianStarBias = 1.06,
+            blueprint = PositionalBlueprint(openers = 3, middleOrder = 4, wicketkeepers = 2, allRounders = 4, pacers = 6, spinners = 3)
+        ),
+        FranchiseProfile(
+            id = FranchiseId.RR,
+            shortCode = "RR",
+            fullName = "Rajasthan Royals",
+            city = "Jaipur",
+            homeVenue = "Sawai Mansingh Stadium",
+            primaryColor = Color(0xFFEA1A85),
+            secondaryColor = Color(0xFF254AA5),
+            onPrimaryColor = Color(0xFFFFFFFF),
+            dnaHeadline = "High-Ceiling Indian Youth & Elite Bowlers",
+            dnaTags = listOf("Young Indian Core", "Elite Bowlers", "Smart Analytics"),
+            archetypeAffinities = mapOf(
+                PlayerArchetype.WRIST_SPINNER to 1.26,
+                PlayerArchetype.LEFT_ARM_PACER to 1.24,
+                PlayerArchetype.POWERPLAY_OPENER to 1.20,
+                PlayerArchetype.ANCHOR_WK to 1.20,
+                PlayerArchetype.DEATH_PACER to 1.20,
+                PlayerArchetype.MIDDLE_ORDER_ENFORCER to 1.16,
+                PlayerArchetype.FINISHER to 1.15
+            ),
+            youthBias = 1.18,
+            experienceBias = 0.96,
+            captaincyBonus = 1.08,
+            aggression = 1.02,
+            marqueeStretch = 1.14,
+            indianStarBias = 1.18,
+            blueprint = PositionalBlueprint(openers = 3, middleOrder = 4, wicketkeepers = 2, allRounders = 4, pacers = 5, spinners = 3)
+        ),
+        FranchiseProfile(
+            id = FranchiseId.DC,
+            shortCode = "DC",
+            fullName = "Delhi Capitals",
+            city = "New Delhi",
+            homeVenue = "Arun Jaitley Stadium",
+            primaryColor = Color(0xFF1769D8),
+            secondaryColor = Color(0xFFE11D48),
+            onPrimaryColor = Color(0xFFFFFFFF),
+            dnaHeadline = "Dynamic Indian Batters & Left-Arm Weapons",
+            dnaTags = listOf("Dynamic Indian Bats", "Left-Arm Pace/Spin", "High-Upside Youth"),
+            archetypeAffinities = mapOf(
+                PlayerArchetype.LEFT_ARM_PACER to 1.28,
+                PlayerArchetype.SPIN_ALL_ROUNDER to 1.24,
+                PlayerArchetype.WRIST_SPINNER to 1.24,
+                PlayerArchetype.EXPLOSIVE_WK to 1.22,
+                PlayerArchetype.MIDDLE_ORDER_ENFORCER to 1.20,
+                PlayerArchetype.POWERPLAY_OPENER to 1.18
+            ),
+            youthBias = 1.14,
+            experienceBias = 0.98,
+            captaincyBonus = 1.14,
+            aggression = 1.08,
+            marqueeStretch = 1.18,
+            indianStarBias = 1.16,
+            blueprint = PositionalBlueprint(openers = 3, middleOrder = 4, wicketkeepers = 2, allRounders = 4, pacers = 5, spinners = 3)
+        ),
+        FranchiseProfile(
+            id = FranchiseId.PBKS,
+            shortCode = "PBKS",
+            fullName = "Punjab Kings",
+            city = "Mullanpur",
+            homeVenue = "PCA New Stadium, Mullanpur",
+            primaryColor = Color(0xFFDD1F2D),
+            secondaryColor = Color(0xFFC9D1D9),
+            onPrimaryColor = Color(0xFFFFFFFF),
+            dnaHeadline = "Aggressive Purse-Spenders & Marquee Hunters",
+            dnaTags = listOf("Bidding War Sparks", "Captains & Marquees", "Express Pace"),
+            archetypeAffinities = mapOf(
+                PlayerArchetype.PACE_ALL_ROUNDER to 1.28,
+                PlayerArchetype.EXPRESS_PACER to 1.26,
+                PlayerArchetype.LEFT_ARM_PACER to 1.24,
+                PlayerArchetype.MIDDLE_ORDER_ENFORCER to 1.22,
+                PlayerArchetype.FINISHER to 1.22,
+                PlayerArchetype.EXPLOSIVE_WK to 1.20,
+                PlayerArchetype.WRIST_SPINNER to 1.16
+            ),
+            youthBias = 1.04,
+            experienceBias = 1.04,
+            captaincyBonus = 1.24,
+            aggression = 1.22,
+            marqueeStretch = 1.32,
+            indianStarBias = 1.14,
+            blueprint = PositionalBlueprint(openers = 3, middleOrder = 4, wicketkeepers = 2, allRounders = 4, pacers = 5, spinners = 3)
+        ),
+        FranchiseProfile(
+            id = FranchiseId.GT,
+            shortCode = "GT",
+            fullName = "Gujarat Titans",
+            city = "Ahmedabad",
+            homeVenue = "Narendra Modi Stadium",
+            primaryColor = Color(0xFF283A63),
+            secondaryColor = Color(0xFFE5B84B),
+            onPrimaryColor = Color(0xFFFFFFFF),
+            dnaHeadline = "Balanced Pace + Spin Core & Versatile Finishers",
+            dnaTags = listOf("Pace + Spin Core", "Versatile Finishers", "Value Indian Batters"),
+            archetypeAffinities = mapOf(
+                PlayerArchetype.WRIST_SPINNER to 1.28,
+                PlayerArchetype.SWING_PACER to 1.24,
+                PlayerArchetype.DEATH_PACER to 1.22,
+                PlayerArchetype.FINISHER to 1.24,
+                PlayerArchetype.TOP_ORDER_ANCHOR to 1.22,
+                PlayerArchetype.SPIN_ALL_ROUNDER to 1.18,
+                PlayerArchetype.FINGER_SPINNER to 1.16
+            ),
+            youthBias = 1.06,
+            experienceBias = 1.06,
+            captaincyBonus = 1.10,
+            aggression = 1.00,
+            marqueeStretch = 1.16,
+            indianStarBias = 1.14,
+            blueprint = PositionalBlueprint(openers = 3, middleOrder = 4, wicketkeepers = 2, allRounders = 4, pacers = 5, spinners = 3)
+        ),
+        FranchiseProfile(
+            id = FranchiseId.LSG,
+            shortCode = "LSG",
+            fullName = "Lucknow Super Giants",
+            city = "Lucknow",
+            homeVenue = "Ekana Cricket Stadium",
+            primaryColor = Color(0xFF0077D9),
+            secondaryColor = Color(0xFFFF7A00),
+            onPrimaryColor = Color(0xFFFFFFFF),
+            dnaHeadline = "Multi-Dimensional All-Rounders & Tall Pacers",
+            dnaTags = listOf("All-Rounder Depth", "Tall Express Pacers", "Middle Anchors"),
+            archetypeAffinities = mapOf(
+                PlayerArchetype.PACE_ALL_ROUNDER to 1.28,
+                PlayerArchetype.SPIN_ALL_ROUNDER to 1.24,
+                PlayerArchetype.EXPRESS_PACER to 1.26,
+                PlayerArchetype.TOP_ORDER_ANCHOR to 1.20,
+                PlayerArchetype.MIDDLE_ORDER_ENFORCER to 1.20,
+                PlayerArchetype.ANCHOR_WK to 1.18,
+                PlayerArchetype.WRIST_SPINNER to 1.18
+            ),
+            youthBias = 1.05,
+            experienceBias = 1.05,
+            captaincyBonus = 1.16,
+            aggression = 1.08,
+            marqueeStretch = 1.20,
+            indianStarBias = 1.12,
+            blueprint = PositionalBlueprint(openers = 3, middleOrder = 4, wicketkeepers = 2, allRounders = 5, pacers = 5, spinners = 3)
+        )
+    )
+
+    private val byIdMap: Map<FranchiseId, FranchiseProfile> = allFranchises.associateBy { it.id }
+
+    fun get(id: FranchiseId): FranchiseProfile = byIdMap.getValue(id)
+}

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">IPL Auction</string>
+    <string name="hero_subtitle">MEGA AUCTION SIMULATOR • ZERO RETENTIONS • ₹120 CR PURSE</string>
+    <string name="choose_franchise_title">SELECT YOUR FRANCHISE</string>
+    <string name="choose_franchise_hint">Manage 1 authentic IPL franchise while 9 independent AI brains battle you across 9 official sets.</string>
+    <string name="start_auction_cta">ENTER AUCTION ROOM</string>
+    <string name="bid_action">BID</string>
+    <string name="skip_player_action">SKIP PLAYER</string>
+    <string name="skip_set_action">SKIP SET</string>
+    <string name="tab_stage">Stage</string>
+    <string name="tab_teams">Teams</string>
+    <string name="tab_my_squad">My Squad</string>
+    <string name="set_summary_title">SET SUMMARY</string>
+    <string name="proceed_next_set">PROCEED TO NEXT SET</string>
+    <string name="wrap_up_title">MEGA AUCTION WRAP-UP</string>
+    <string name="new_auction_cta">START NEW MEGA AUCTION</string>
+</resources>

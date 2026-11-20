@@ -1,0 +1,6 @@
+{
+  "name": "IPL Auction",
+  "description": "Hyper-realistic broadcast-style IPL Mega Auction Simulator where you manage 1 authentic franchise against 9 independent AI brains.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
